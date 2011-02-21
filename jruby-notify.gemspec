@@ -13,6 +13,7 @@ Gem::Specification.new do |s|
   s.summary       = %q{JNotify for JRuby}
   s.description   = %q{JRuby-Notify is an thin wrapper around the JNotify library.}
 
+  s.add_development_dependency 'rake'
   s.add_development_dependency 'bundler',     '~> 1.0.10'
   s.add_development_dependency 'rspec',       '~> 2.5.0'
 
