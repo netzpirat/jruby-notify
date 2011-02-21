@@ -1,5 +1,3 @@
-require 'java'
-
 module JRubyNotify
   class Listener
     include Java::NetContentobjectsJnotify::JNotifyListener
