@@ -1,11 +1,8 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path('../lib', __FILE__)
-require 'jruby-notify'
 
 Gem::Specification.new do |s|
   s.name          = %q{jruby-notify}
-  s.version       = JRubyNotify::VERSION
-  s.platform      = Gem::Platform::RUBY
+  s.version       = '0.0.1'
 
   s.authors       = ['Michael Kessler']
   s.email         = %q{michi@netzpiraten.ch}
