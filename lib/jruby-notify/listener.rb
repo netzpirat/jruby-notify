@@ -7,19 +7,25 @@ module JRubyNotify
     end
 
     def file_renamed(watch, path, file, old)
-      @callback.call(path, file, old)
+      clean_call(path, file, old)
     end
 
     def file_modified(watch, path, file)
-      @callback.call(path, file)
+      clean_call(path, file)
     end
 
     def file_deleted(watch, path, file)
-      @callback.call(path, file)
+      clean_call(path, file)
     end
 
     def file_created(watch, path, file)
-      @callback.call(path, file)
+      clean_call(path, file)
+    end
+
+    private
+
+    def clean_call(*paths)
+      @callback.call paths.map { |p| p.tr(File::ALT_SEPARATOR, File::SEPARATOR) }
     end
 
   end
