@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = %q{jruby-notify}
-  s.version       = '0.0.2'
+  s.version       = '0.0.3'
 
   s.authors       = ['Michael Kessler']
   s.email         = %q{michi@netzpiraten.ch}
