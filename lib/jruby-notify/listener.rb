@@ -24,8 +24,16 @@ module JRubyNotify
 
     private
 
+    #
+    # Ensure that all paths have File::SEPARATOR as separator
+    # This avoid a mix of different separators within the paths
+    #
     def clean_call(*paths)
-      @callback.call paths.map { |p| p.tr(File::ALT_SEPARATOR, File::SEPARATOR) }
+      if File::ALT_SEPARATOR
+        @callback.call paths.map { |p| p.tr(File::ALT_SEPARATOR, File::SEPARATOR) }
+      else
+        @callback.call paths
+      end
     end
 
   end
