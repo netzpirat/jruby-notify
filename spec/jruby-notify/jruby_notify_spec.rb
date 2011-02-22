@@ -35,7 +35,9 @@ describe JRubyNotify do
     sleep 2
     notify.stop
 
-    result.should eql files
+    result.should include File.join(@test_dir, 'test1', 'test3', 'a')
+    result.should include File.join(@test_dir, 'test1', 'b')
+    result.should include File.join(@test_dir, 'c')
   end
 
   it "should catch a renamed file" do
@@ -61,10 +63,8 @@ describe JRubyNotify do
     sleep 2
     notify.stop
 
-    result.should eql [
-      File.join(@test_dir, 'test1', 'test3', 'a') + '->'  + File.join(@test_dir, 'test1', 'test3', 'b'),
-      File.join(@test_dir, 'test1', 'test3', 'b') + '->'  + File.join(@test_dir, 'test2', 'c'),
-    ]
+    result.should include File.join(@test_dir, 'test1', 'test3', 'a') + '->'  + File.join(@test_dir, 'test1', 'test3', 'b')
+    result.should include File.join(@test_dir, 'test1', 'test3', 'b') + '->'  + File.join(@test_dir, 'test2', 'c')
   end
 
   it "should catch a modified file" do
@@ -92,7 +92,7 @@ describe JRubyNotify do
     sleep 2
     notify.stop
 
-    result.should eql [File.join(@test_dir, 'test1', 'b')]
+    result.should include File.join(@test_dir, 'test1', 'b')
   end
 
   it "should catch a deleted file" do
@@ -124,7 +124,8 @@ describe JRubyNotify do
     sleep 2
     notify.stop
 
-    result.should eql [File.join(@test_dir, 'test1', 'b'), File.join(@test_dir, 'c')]
+    result.should include File.join(@test_dir, 'test1', 'b')
+    result.should include File.join(@test_dir, 'c')
   end
 
 end
