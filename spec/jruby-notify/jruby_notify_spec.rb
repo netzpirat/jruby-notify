@@ -3,7 +3,6 @@ require 'fileutils'
 require 'tmpdir'
 
 describe JRubyNotify do
-
   before do
     @test_dir = File.join(Dir.tmpdir, 'notify-test')
     FileUtils.mkdir_p File.join(@test_dir, 'test1', 'test3')
@@ -128,4 +127,7 @@ describe JRubyNotify do
     result.should include File.join(@test_dir, 'c')
   end
 
+  it "should not raise when calling #stop before #run" do
+    proc { JRubyNotify::Notify.new.stop }.should_not raise_error
+  end
 end
