@@ -3,10 +3,11 @@ module JRubyNotify
 
     def initialize
       JRubyNotify.define_library_path
+      @watches = []
     end
 
     def watch(paths, mask = JRubyNotify::FILE_ANY, subtree = true, &callback)
-      @paths    = paths.kind_of?(Enumerable) ? paths : [paths]
+      @paths    = Array(paths)
       @callback = callback
       @mask     = mask
       @subtree  = subtree
@@ -21,6 +22,5 @@ module JRubyNotify
     def stop
       @watches.each { |watch| Java::NetContentobjectsJNotify::JNotify.removeWatch(watch) }
     end
-
   end
 end

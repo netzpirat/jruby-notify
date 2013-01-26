@@ -1,5 +1,5 @@
 require 'java'
-require 'jnotify/jnotify-0.93.jar'
+require 'jnotify/jnotify-0.94.jar'
 
 module JRubyNotify
 
