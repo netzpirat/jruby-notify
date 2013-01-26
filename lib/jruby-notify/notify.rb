@@ -7,7 +7,7 @@ module JRubyNotify
     end
 
     def watch(paths, mask = JRubyNotify::FILE_ANY, subtree = true, &callback)
-      @paths    = paths.kind_of?(Enumerable) ? paths : [paths]
+      @paths    = Array(paths)
       @callback = callback
       @mask     = mask
       @subtree  = subtree
