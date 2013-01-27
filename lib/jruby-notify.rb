@@ -3,7 +3,7 @@ require 'jnotify/jnotify-0.94.jar'
 
 module JRubyNotify
 
-  VERSION = '0.0.3'
+  VERSION = '0.4.0'
 
   FILE_CREATED  = 1
   FILE_DELETED  = 2
