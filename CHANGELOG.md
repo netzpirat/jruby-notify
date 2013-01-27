@@ -1,4 +1,4 @@
-# Haml Coffee Changelog
+# jruby-notify Changelog
 
 ##  Version 0.4.0,  January 27, 2013
 
