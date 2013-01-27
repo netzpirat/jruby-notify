@@ -33,18 +33,41 @@ Please have a look at the platform specific notes on the [JNotify](http://jnotif
 
     notify.run
 
-## Forecast
-
-With the upcoming release of Java 7 there will be a more robust solution to this problem with the
-[WatchService API](http://java.sun.com/developer/technicalArticles/javase/nio/#6). This gem will
-make use of this API when it'll be released.
-
 ## Other solutions
 
 There are other gems that provides almost the same functionality for MRI:
 
-* [rb-fsevent](https://github.com/thibaudgg/rb-fsevent) for Mac OS X only
-* [rb-inotify](https://github.com/nex3/rb-inotify) for Linux only
+* [rb-fsevent](https://github.com/thibaudgg/rb-fsevent) for Mac OS X
+* [rb-inotify](https://github.com/nex3/rb-inotify) for Linux
+* [rb-fchange](https://github.com/stereobooster/rb-fchange) for Windows
+* [wdm](https://github.com/Maher4Ever/wdm) for Windows
+
+## Author
+
+Developed by Michael Kessler, [mksoft.ch](https://mksoft.ch).
+
+If you like Haml Coffee Assets, you can watch the repository at [GitHub](https://github.com/netzpirat/haml_coffee_assets) and
+follow [@netzpirat](https://twitter.com/#!/netzpirat) on Twitter for project updates.
+
+## Development
+
+* Issues and feature request hosted at [GitHub Issues](https://github.com/netzpirat/jruby-notify/issues).
+* Documentation hosted at [RubyDoc](http://rubydoc.info/github/netzpirat/jruby-notify/master/frames).
+* Source hosted at [GitHub](https://github.com/netzpirat/jruby-notify).
+
+Pull requests are very welcome! Please try to follow these simple rules if applicable:
+
+* Please create a topic branch for every separate change you make.
+* Make sure your patches are well tested. All specs must pass.
+* Update the [Yard](http://yardoc.org/) documentation.
+* Update the README.
+* Update the CHANGELOG for noteworthy changes.
+* Please **do not change** the version number.
+
+## Contributors
+
+See the [CHANGELOG](https://github.com/netzpirat/jruby-notify/blob/master/CHANGELOG.md) and the GitHub list of
+[contributors](https://github.com/netzpirat/jruby-notify/contributors).
 
 ## Acknowledgement
 
@@ -52,25 +75,5 @@ Omry Yadan for writting the JNotify library and Matthew Donoughe for providing t
 
 ## License
 
-(The MIT License)
-
-Copyright (c) 2011 Michael Kessler
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+This Ruby gem is released under the [MIT](https://github.com/netzpirat/jruby-notify/blob/master/LICENSE) license.
+The JNotify library is released under the [LPGL](https://github.com/netzpirat/jruby-notify/blob/master/lib/jnotify/LPGL) license.
