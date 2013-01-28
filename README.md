@@ -1,4 +1,4 @@
-# JNotify for JRuby [![Build Status](https://travis-ci.org/vongruenigen/jruby-notify.png)](https://travis-ci.org/vongruenigen/jruby-notify)
+# JNotify for JRuby [![Build Status](https://travis-ci.org/netzpirat/jruby-notify.png)](https://travis-ci.org/netzpirat/jruby-notify)
 
 jruby-notify is a thin wrapper around the [JNotify](http://jnotify.sourceforge.net/) library, a java library that allow
 java application to listen to file system events, such as:
