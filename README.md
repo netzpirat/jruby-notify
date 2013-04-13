@@ -46,7 +46,7 @@ There are other gems that provides almost the same functionality for MRI:
 
 Developed by Michael Kessler, [mksoft.ch](https://mksoft.ch).
 
-If you like Haml Coffee Assets, you can watch the repository at [GitHub](https://github.com/netzpirat/haml_coffee_assets) and
+If you like JRuby Notify, you can watch the repository at [GitHub](https://github.com/netzpirat/jruby-notify) and
 follow [@netzpirat](https://twitter.com/#!/netzpirat) on Twitter for project updates.
 
 ## Development
