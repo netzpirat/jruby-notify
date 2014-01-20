@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version       = '0.4.0'
 
   s.authors       = ['Michael Kessler']
-  s.email         = %q{michi@netzpiraten.ch}
+  s.email         = %q{michi@flinkfinger.com}
   s.homepage      = %q{https://github.com/netzpirat/jruby-notify}
   s.summary       = %q{JNotify for JRuby}
   s.description   = %q{JRuby-Notify is an thin wrapper around the JNotify library.}
